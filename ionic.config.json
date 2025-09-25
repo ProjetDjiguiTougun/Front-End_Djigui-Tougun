@@ -1,0 +1,7 @@
+{
+  "name": "djiguitougun",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
