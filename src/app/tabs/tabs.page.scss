@@ -1,0 +1,13 @@
+/* Fichier : src/app/tabs/tabs.page.scss */
+ion-tab-bar {
+  --background: #008080; // Couleur sarcelle
+  --color-selected: white;
+  --color: #a0d9d9;
+  border-radius: 25px 25px 0 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

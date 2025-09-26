@@ -1,0 +1,97 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Paiement</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="profile-section">
+    <ion-avatar>
+      <img src="assets/img/avatar-fatima.jpg" alt="Photo de Fatima Traoré">
+    </ion-avatar>
+    <h1 class="profile-name">Fatima Traoré</h1>
+    <p class="profile-age">Âge : 11 ans</p>
+  </div>
+
+  <div class="ion-padding-horizontal">
+    <h2 class="section-title">Montant</h2>
+    <div class="amount-input-container">
+      <ion-input type="number" value="50000"></ion-input>
+      <span>FCFA</span>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+
+    <h2 class="section-title">Méthodes de Paiement</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <div class="payment-method">
+            <img src="assets\img\Orange_logo.svg.png" alt="Orange Money">
+            <span>Orange Money</span>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="payment-method">
+            <img src="assets\img\payment-methods-moov-money.f34903fd.png" alt="Moov Money">
+            <span>Moov Money</span>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div class="payment-method">
+            <img src="assets\img\okwaveok.jpg" alt="Wane Money">
+            <span>Wane Money</span>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="payment-method selected">
+            <ion-icon class="icon-placeholder" name="card-outline"></ion-icon>
+            <span>Autres</span>
+            <ion-icon class="checkmark" name="checkmark-circle"></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h2 class="section-title">Détails Paiement</h2>
+    <ion-card class="details-card">
+      <ion-card-content>
+        <div class="detail-item">
+          <span>Frais d'inscription :</span>
+          <strong>30,000 FCFA</strong>
+        </div>
+        <div class="detail-item">
+          <span>Cantine :</span>
+          <strong>10,000 FCFA</strong>
+        </div>
+        <div class="detail-item">
+          <span>Fournitures :</span>
+          <strong>5,000 FCFA</strong>
+        </div>
+        <div class="detail-item">
+          <span>Bibliothèque :</span>
+          <strong>5,000 FCFA</strong>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" shape="round" class="pay-button">
+      Payer maintenant
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

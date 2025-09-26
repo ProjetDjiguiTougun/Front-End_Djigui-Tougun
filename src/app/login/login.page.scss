@@ -1,0 +1,119 @@
+/* Fichier : src/app/login/login.page.scss */
+
+:host {
+  --ion-background-color: #ffffff;
+  --ion-text-color: #1e1e1e;
+  --ion-color-primary: #299c8f; // Sarcelle/Teal
+}
+
+ion-toolbar {
+  --background: transparent;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.logo {
+  max-width: 120px;
+  margin: 0 auto 40px auto;
+}
+
+// Style des champs de saisie
+.input-item {
+  --background: #f4f5f8;
+  --padding-start: 16px;
+  --highlight-height: 0; // Pas de ligne en dessous
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+
+  &.ion-focused {
+    border-color: var(--ion-color-primary);
+  }
+
+  ion-icon {
+    color: #888;
+  }
+
+  ion-input {
+    --padding-top: 18px;
+    --padding-bottom: 18px;
+  }
+}
+
+.forgot-password-link {
+  font-size: 14px;
+  color: var(--ion-color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: -8px;
+  display: inline-block;
+}
+
+.login-button {
+  --background: var(--ion-color-primary);
+  --border-radius: 12px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: none;
+  margin-top: 24px;
+}
+
+// Section de connexion sociale
+.social-login-section {
+  margin-top: 40px;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+
+  &::before, &::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &::before {
+    margin-right: .5em;
+  }
+
+  &::after {
+    margin-left: .5em;
+  }
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+
+  .social-btn {
+    --border-radius: 50%;
+    --padding-start: 0;
+    --padding-end: 0;
+    width: 50px;
+    height: 50px;
+    --background: #fff;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    ion-icon {
+      font-size: 24px;
+    }
+
+    &.google ion-icon { color: #DB4437; }
+    &.facebook ion-icon { color: #4267B2; }
+    &.x-twitter ion-icon { color: #000000; }
+    &.linkedin ion-icon { color: #0A66C2; }
+  }
+}

@@ -1,0 +1,70 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Enfants à Parrainer</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar class="filter-toolbar">
+    <ion-chip class="active">
+      <ion-label>Tous</ion-label>
+      <ion-icon name="checkmark-outline"></ion-icon>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>Garçons</ion-label>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-chip>
+    <ion-chip class="active">
+      <ion-label>Filles</ion-label>
+      <ion-icon name="checkmark-outline"></ion-icon>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>Association</ion-label>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-chip>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-card class="sponsor-card">
+    <img src="assets/img/enfant.jpg" alt="Photo de Ali Touré en classe">
+    <ion-card-content>
+      <h2 class="child-name">Ali Touré</h2>
+      <div class="details-row">
+        <span class="school">École Primaire</span>
+        <span class="age">Âge : 10 ans</span>
+      </div>
+      <p class="child-detail">Association : <span class="info-value">Déméton</span></p>
+      <p class="child-detail"><strong>Besoins :</strong> Fournitures, Cantine</p>
+      <ion-button expand="block" shape="round" class="sponsor-button">
+        Parrainer l'enfant
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="sponsor-card">
+    <img src="assets/img/enfant.jpg" alt="Photo de enfant en classe">
+    <ion-card-content>
+      <h2 class="child-name">Ali Touré</h2>
+      <div class="details-row">
+        <span class="school">École Primaire</span>
+        <span class="age">Âge : 10 ans</span>
+      </div>
+      <p class="child-detail">Association : <span class="info-value">Déméton</span></p>
+      <p class="child-detail"><strong>Besoins :</strong> Fournitures, Cantine</p>
+      <ion-button expand="block" shape="round" class="sponsor-button">
+        Parrainer l'enfant
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,112 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Paramètre</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="profile-card">
+    <ion-avatar slot="start">
+      <img src="assets/img/ad.jpg" alt="Photo de Amadou Diallo">
+    </ion-avatar>
+    <div class="profile-info">
+      <ion-label>
+        <h2>Amadou Diallo</h2>
+        <p>Voir profil</p>
+      </ion-label>
+    </div>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </div>
+
+  <ion-list lines="none" class="settings-list">
+    <ion-item>
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Notification push</h2>
+        <p>Recevoir des notification sur votre appareil</p>
+      </ion-label>
+      <ion-toggle slot="end" checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Notification email</h2>
+        <p>Recevoir des notification par email</p>
+      </ion-label>
+      <ion-toggle slot="end" checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="chatbubble-ellipses-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Notification SMS</h2>
+        <p>Recevoir des notification par SMS</p>
+      </ion-label>
+      <ion-toggle slot="end" checked="false"></ion-toggle>
+    </ion-item>
+     <ion-item>
+      <ion-icon name="chatbox-ellipses-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Nouveau messages</h2>
+        <p>Recevoir des notification sur votre appareil</p>
+      </ion-label>
+      <ion-toggle slot="end" checked="true"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <h3 class="section-title">Apparence</h3>
+  <ion-list lines="none" class="settings-list">
+    <ion-item>
+      <ion-icon name="globe-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Langue</h2>
+        <p>Changer la langue de l'application</p>
+      </ion-label>
+      <ion-select value="fr" interface="popover">
+        <ion-select-option value="fr">Français</ion-select-option>
+        <ion-select-option value="en">English</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="color-palette-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Thème</h2>
+        <p>Changer l'apparence de l'application</p>
+      </ion-label>
+      <ion-select value="auto" interface="popover">
+        <ion-select-option value="auto">Automatique</ion-select-option>
+        <ion-select-option value="light">Clair</ion-select-option>
+        <ion-select-option value="dark">Sombre</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <h3 class="section-title">À propos</h3>
+  <ion-list lines="none" class="settings-list">
+    <ion-item>
+      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Version</h2>
+        <p>1.0.0 (Build 123)</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button="true">
+      <ion-icon name="star-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Évaluations</h2>
+      </ion-label>
+       <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

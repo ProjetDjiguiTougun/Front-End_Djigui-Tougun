@@ -1,0 +1,115 @@
+/* Fichier : src/app/parametre/parametre.page.scss */
+
+:host {
+  --ion-background-color: #f4f5f8;
+  --ion-text-color: #1e1e1e;
+  --ion-color-primary: #299c8f; // Sarcelle/Teal
+}
+
+// --- En-tête ---
+ion-toolbar {
+  --background: var(--ion-background-color);
+  padding-top: 10px;
+}
+
+ion-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+// --- Carte de profil ---
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  ion-avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+  }
+
+  .profile-info {
+    flex: 1;
+
+    h2 {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0;
+    }
+    p {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+    }
+  }
+
+  ion-icon[slot="end"] {
+    color: #c7c7cc;
+  }
+}
+
+// --- Titre de section ---
+.section-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ion-color-primary);
+  text-transform: uppercase;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+// --- Listes de paramètres ---
+.settings-list {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 16px;
+
+  ion-item {
+    --background: #fff;
+    --padding-start: 16px;
+    --inner-padding-end: 16px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    ion-icon[slot="start"] {
+      margin-right: 16px;
+      color: var(--ion-color-primary);
+      font-size: 22px;
+    }
+
+    ion-label {
+      h2 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 13px;
+        color: #666;
+      }
+    }
+
+    ion-toggle {
+      --handle-background: white;
+      --background: #d1d1d6;
+      --background-checked: var(--ion-color-primary);
+      --handle-background-checked: white;
+    }
+
+    ion-select {
+        color: #666;
+        font-weight: 500;
+        justify-content: flex-end;
+    }
+
+    ion-icon[slot="end"] {
+        color: #c7c7cc;
+    }
+  }
+}
