@@ -21,12 +21,13 @@ import { addIcons } from 'ionicons';
 export class ParrainagePage implements OnInit {
 
   constructor() {
-     addIcons({
-      arrowBackOutline,
-      notificationsOutline,
-      chevronDownOutline,
-      checkmarkOutline
-    });
+    //  addIcons({
+    //   arrowBackOutline,
+    //   notificationsOutline,
+    //   chevronDownOutline,
+    //   checkmarkOutline,
+
+    // });
   }
 
   ngOnInit() {

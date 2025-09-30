@@ -14,7 +14,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <div class="main-image-container">
     <img src="assets/img/c424d6b90c65525224bdee3655183419.jpg" alt="Enfants apprenant sur un ordinateur portable">
   </div>
@@ -24,36 +24,40 @@
     <ion-grid>
       <ion-row>
         <ion-col size="6">
-          <ion-card class="action-card">
+          <ion-card class="action-card" routerLink="/tabs/parrainage" routerDirection="forward">
             <ion-card-content>
               <ion-icon name="school-outline"></ion-icon>
               <ion-label>Parrainer un enfant</ion-label>
+              <ion-ripple-effect></ion-ripple-effect>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col size="6">
-          <ion-card class="action-card">
+          <ion-card class="action-card" routerLink="/tabs/children" routerDirection="forward">
             <ion-card-content>
               <ion-icon name="people-outline"></ion-icon>
               <ion-label>Mes enfants</ion-label>
+              <ion-ripple-effect></ion-ripple-effect>
             </ion-card-content>
           </ion-card>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="6">
-          <ion-card class="action-card">
+          <ion-card class="action-card" routerLink="/tabs/paiement" routerDirection="forward">
             <ion-card-content>
               <ion-icon color="primary" name="cash-outline"></ion-icon>
               <ion-label>Paiement</ion-label>
+              <ion-ripple-effect></ion-ripple-effect>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col size="6">
-          <ion-card class="action-card">
+          <ion-card class="action-card" routerLink="/tabs/rapports" routerDirection="forward">
             <ion-card-content>
               <ion-icon name="bar-chart-outline"></ion-icon>
               <ion-label>Rapports</ion-label>
+              <ion-ripple-effect></ion-ripple-effect>
             </ion-card-content>
           </ion-card>
         </ion-col>
@@ -61,10 +65,11 @@
     </ion-grid>
 
     <h2 class="section-title">Votre impact en ce mois</h2>
-    <ion-card class="impact-card">
+    <ion-card class="impact-card" routerLink="/tabs/children" routerDirection="forward">
       <ion-card-content>
-        <ion-card-title>Enfants pris en charges</ion-card-title>
+        <ion-card-title>Enfants pris en charge</ion-card-title>
         <p class="impact-number">3</p>
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card-content>
     </ion-card>
 
@@ -75,5 +80,4 @@
       </ion-card-content>
     </ion-card>
   </div>
-
 </ion-content>

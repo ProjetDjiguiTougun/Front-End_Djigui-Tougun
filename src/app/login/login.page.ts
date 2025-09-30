@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 import {
   IonContent,
   IonButtons,
@@ -8,7 +9,7 @@ import {
   IonInput,
   IonButton,
   IonIcon,
-  IonText
+  IonText,
 } from '@ionic/angular/standalone';
 
 import { addIcons } from 'ionicons';
@@ -30,6 +31,7 @@ import {
   imports: [
     CommonModule,
     FormsModule,
+    IonicModule,
     IonContent,
     IonButtons,
     IonBackButton,

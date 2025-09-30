@@ -107,3 +107,21 @@ ion-content {
     }
   }
 }
+
+.card-link {
+  display: block;
+  text-decoration: none;
+
+  ion-card {
+    cursor: pointer;
+    transition: transform 150ms ease-in-out;
+  }
+
+  ion-card:active {
+    transform: scale(0.995);
+  }
+
+  ion-card:hover {
+    transform: translateY(-3px);
+  }
+}

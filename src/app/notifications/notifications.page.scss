@@ -1,0 +1,118 @@
+/* Variables de couleur (à adapter à votre thème global si nécessaire) */
+:root {
+  --ion-color-primary: #1d8a8e; // La couleur principale turquoise/vert
+  --ion-color-light-shade: #eef7f7; // Fond très clair des icônes
+  --ion-text-color-muted: #86888f; // Couleur du texte gris (timestamp)
+  --ion-background-color: #f4f5f8; // Couleur de fond générale
+}
+
+ion-toolbar {
+  --background: var(--ion-background-color);
+  --border-width: 0 !important;
+
+  ion-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  ion-back-button, ion-button {
+    --color: #000;
+  }
+}
+
+ion-content {
+  --background: var(--ion-background-color);
+}
+
+ion-list {
+  background: transparent;
+  padding: 0 16px;
+}
+
+ion-card {
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: #fff;
+
+  ion-item {
+    --inner-padding-end: 10px;
+    --padding-start: 10px;
+    --background: transparent;
+    align-items: flex-start;
+    padding: 8px 0;
+  }
+}
+
+.notification-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-top: 5px;
+  background-color: var(--ion-color-light-shade);
+
+  ion-icon {
+    font-size: 1.8rem;
+    color: var(--ion-color-primary);
+  }
+}
+
+ion-label {
+  h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 0.85rem;
+    color: var(--ion-text-color-muted);
+    white-space: normal;
+    line-height: 1.4;
+  }
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: var(--ion-text-color-muted);
+  position: absolute;
+  top: 18px;
+  right: 16px;
+}
+
+/* Style de la barre de navigation */
+ion-footer {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+    border-radius: 25px 25px 0 0;
+    padding: 5px 0;
+  }
+
+  ion-tab-bar {
+    --background: var(--ion-color-primary);
+    border: none;
+  }
+
+  ion-tab-button {
+    --color: #fff;
+    --color-selected: #fff;
+    font-weight: 500;
+
+    &::before {
+      background-color: transparent;
+      display: block;
+      content: "";
+      margin: 0 auto;
+      width: 30px;
+      height: 4px;
+      border-radius: 2px;
+    }
+
+    &.tab-selected::before {
+      background-color: #fff;
+    }
+  }
+}
